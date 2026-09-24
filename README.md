@@ -72,7 +72,7 @@ python3 scripts/publish.py
 
 发布器验证干净工作区，fetch/fast-forward，采集到本地暂存目录，校验后只提交 `docs/data/`，推送并重新 fetch 验证远端一致。并发执行通过文件锁互斥。网络失败后保留本地数据提交，下次尝试补推；不会 force push、自动解决分叉或提交其他人的修改。
 
-代码更新通过 fast-forward 拉取后，下一次采集才运行新代码。GitHub 账号 API 令牌不用于定期发布，运行时只需 SSH。
+代码更新通过 fast-forward 拉取后，下一次采集才运行新代码。GitHub 账号 API 令牌不用于定期发布，运行时只需 SSH。发布器使用 GitHub 官方 `ssh.github.com:443` 入口，并以 `github.com` 的已核实主机公钥验证，避免本机网络的 22 端口连接不稳定；不修改全局 SSH 配置。
 
 安装当前用户的 launchd 任务（每半小时，登录后生效）：
 
