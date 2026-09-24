@@ -7,6 +7,7 @@ from unittest.mock import patch
 
 from test_collector import Fixture
 import publish
+from install_launchd import proxy_environment
 
 
 def command(folder, *args):
@@ -36,6 +37,10 @@ class PublisherTests(unittest.TestCase):
         (self.repo/'README.md').write_text('user changes\n')
         with self.assertRaises(RuntimeError):publish.sync_remote()
         self.assertEqual(command(self.repo,'diff','--cached'),'')
+
+    def test_launchd_inherits_only_local_credential_free_proxy(self):
+        env={'HTTPS_PROXY':'http://127.0.0.1:10809','HTTP_PROXY':'http://user:secret@127.0.0.1:10809','ALL_PROXY':'http://remote.example:8080','NO_PROXY':'localhost'}
+        self.assertEqual(proxy_environment(env),{'HTTPS_PROXY':'http://127.0.0.1:10809','NO_PROXY':'localhost'})
 
     def test_failed_data_push_retried(self):
         (self.repo/'docs/data').mkdir(parents=True)

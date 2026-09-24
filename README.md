@@ -80,6 +80,8 @@ python3 scripts/publish.py
 python3 scripts/install_launchd.py
 ```
 
+安装器会将当前终端中无账号密码的本机回环代理设置带入 launchd；macOS 后台任务不会自动继承终端代理。代理必须在后台运行时可用。代理地址变化后重新执行安装器即可。
+
 查看状态：
 
 ```sh
