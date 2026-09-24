@@ -1,9 +1,9 @@
 [
   {
-    "id": "e78c443252f85027ce15",
-    "automation_id": "baymax-1",
-    "thread_id": "01a0d4cb-a2d1-7c11-bf6b-236ea98bc0aa",
-    "started_at": "2026-09-24T19:01:50Z",
+    "id": "598b8e68cb145fd2ee79",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-09-24T20:02:20Z",
     "completed_at": null,
     "outcome": "running",
     "confidence": "unknown",
@@ -11,9 +11,25 @@
     "summary": "已开始，尚未发现完成回执。",
     "detail": "已开始，尚未发现完成回执。",
     "error": "",
-    "source": "run_index",
+    "source": "heartbeat_marker",
     "turn_count": 1,
     "duration_seconds": null
+  },
+  {
+    "id": "e78c443252f85027ce15",
+    "automation_id": "baymax-1",
+    "thread_id": "01a0d4cb-a2d1-7c11-bf6b-236ea98bc0aa",
+    "started_at": "2026-09-24T19:01:50Z",
+    "completed_at": "2026-09-24T19:07:04Z",
+    "outcome": "success",
+    "confidence": "explicit",
+    "basis": "成功：已按仓库内 $baymax-daily-snapshot skill 完成 2026-09-25（Asia/Shanghai）正式快照。项目 1 共检查 2,886 条事项，创建时间窗口内 734 条全部采集并校验，展开失败 0。使用 workers=4，一轮完成，无降并发重试。\n回执和索引所在的 11 文件包已验证并发布。提交为 7914881ae7c210e8971ba2038961550ac3cc86ae；推送后重新 fetch，确认本地、or…",
+    "summary": "成功：已按仓库内 $baymax-daily-snapshot skill 完成 2026-09-25（Asia/Shanghai）正式快照。项目 1 共检查 2,886 条事项，创建时间窗口内 734 条全部采集并校验，展开失败 0。使用 workers=4，一轮完成，无降并发重试。\n\n回执和索引所在的 11 文件包已验证并发布。提交为 7914881ae7c210e8971ba2038961550ac3cc86ae；推送后重新 fe…",
+    "detail": "成功：已按仓库内 $baymax-daily-snapshot skill 完成 2026-09-25（Asia/Shanghai）正式快照。项目 1 共检查 2,886 条事项，创建时间窗口内 734 条全部采集并校验，展开失败 0。使用 workers=4，一轮完成，无降并发重试。\n\n回执和索引所在的 11 文件包已验证并发布。提交为 7914881ae7c210e8971ba2038961550ac3cc86ae；推送后重新 fetch，确认本地、origin/master 和上游一致，超前/落后均为 0。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 314
   },
   {
     "id": "ae36efe0448e35fa0d13",
