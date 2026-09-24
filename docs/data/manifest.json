@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-24T02:41:41Z",
+  "content_hash": "327755d65979cc6abd3a8dab12453d5a7db44bace382650140142554ec288fcc",
+  "timezone": "Asia/Shanghai",
+  "retention_days": 90,
+  "collection_interval_minutes": 30,
+  "heartbeat_minutes": 60,
+  "stale_after_minutes": 120,
+  "run_count": 96,
+  "window_start": "2026-06-26T02:41:41Z",
+  "coverage_start": "2026-07-31T17:02:05Z",
+  "warnings": [],
+  "tasks": [
+    {
+      "id": "automation",
+      "name": "群总结助手每日群聊归档",
+      "status": "ACTIVE",
+      "kind": "cron",
+      "schedule": "每天 01:00",
+      "last_run_at": "2026-09-23T17:00:14Z",
+      "next_run_at": "2026-09-24T17:00:35Z",
+      "latest_run_id": "79cbb2f8ce961861d5ae",
+      "coverage_gap": false,
+      "possibly_overdue": false,
+      "run_count": 56
+    },
+    {
+      "id": "automation-2",
+      "name": "每周技术中心核心沟通群简报",
+      "status": "ACTIVE",
+      "kind": "cron",
+      "schedule": "每周一 11:00",
+      "last_run_at": "2026-09-21T03:01:43Z",
+      "next_run_at": "2026-09-28T03:01:40Z",
+      "latest_run_id": null,
+      "coverage_gap": true,
+      "possibly_overdue": false,
+      "run_count": 0
+    },
+    {
+      "id": "baymax-1",
+      "name": "baymax 需求管理每日快照",
+      "status": "ACTIVE",
+      "kind": "cron",
+      "schedule": "每天 03:00",
+      "last_run_at": "2026-09-23T19:01:45Z",
+      "next_run_at": "2026-09-24T19:01:48Z",
+      "latest_run_id": "dddd4fdfee3dca86191d",
+      "coverage_gap": false,
+      "possibly_overdue": false,
+      "run_count": 23
+    },
+    {
+      "id": "codex",
+      "name": "Codex 定时任务每周备份",
+      "status": "ACTIVE",
+      "kind": "heartbeat",
+      "schedule": "每周日 09:00",
+      "last_run_at": null,
+      "next_run_at": "2026-09-27T01:01:38Z",
+      "latest_run_id": null,
+      "coverage_gap": false,
+      "possibly_overdue": false,
+      "run_count": 0
+    },
+    {
+      "id": "it",
+      "name": "Matrix 每周维护",
+      "status": "ACTIVE",
+      "kind": "cron",
+      "schedule": "每周三、六 05:00",
+      "last_run_at": "2026-09-23T01:41:41Z",
+      "next_run_at": "2026-09-25T21:01:45Z",
+      "latest_run_id": "2597ac04930ce9fa5d06",
+      "coverage_gap": false,
+      "possibly_overdue": false,
+      "run_count": 15
+    },
+    {
+      "id": "it-2",
+      "name": "IT 资源台账日度检查",
+      "status": "ACTIVE",
+      "kind": "heartbeat",
+      "schedule": "每天 04:00",
+      "last_run_at": "2026-09-23T20:01:15Z",
+      "next_run_at": "2026-09-24T20:01:55Z",
+      "latest_run_id": "a13c644ac6754d97ab13",
+      "coverage_gap": false,
+      "possibly_overdue": false,
+      "run_count": 1
+    },
+    {
+      "id": "mcp-baymax-9-21",
+      "name": "验证 MCP Baymax 9月21日信息",
+      "status": "PAUSED",
+      "kind": "heartbeat",
+      "schedule": "每天 08:00",
+      "last_run_at": "2026-09-23T01:42:11Z",
+      "next_run_at": null,
+      "latest_run_id": "894b28f41697ed888996",
+      "coverage_gap": false,
+      "possibly_overdue": false,
+      "run_count": 1
+    }
+  ],
+  "shards": [
+    {
+      "file": "runs-2026-09-0a6582302de8.json",
+      "count": 50
+    },
+    {
+      "file": "runs-2026-08-545aaea4cb90.json",
+      "count": 46
+    }
+  ],
+  "source_capabilities": {
+    "schedule_metadata": true,
+    "run_index": true,
+    "session_headers": true
+  },
+  "classification_note": "依据最终回复归类，不代表独立复核业务系统；不明确的结果标记待确认。"
+}

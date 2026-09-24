@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#163d33">
+  <meta name="robots" content="noindex,nofollow">
+  <title>定时任务 · 运行看板</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><div class="wrap header-inner"><div><p class="eyebrow">CODEX / OPERATIONS</p><h1>定时任务运行看板</h1><p class="subtitle">每天的执行情况，在这里一眼看清。</p></div><button id="refresh" class="refresh" type="button">刷新数据 <span aria-hidden="true">↻</span></button></div></header>
+  <main class="wrap">
+    <div id="loading" role="status" class="notice">正在读取运行记录…</div>
+    <div id="error" role="alert" class="notice error" hidden></div>
+    <div id="dashboard" hidden>
+      <section class="sync-strip" aria-label="同步情况"><div><span id="freshness" class="pill"></span><span id="sync-time"></span></div><span class="muted">每 30 分钟采集 · 北京时间</span></section>
+      <div id="source-warning" class="notice warning" hidden></div>
+      <section aria-labelledby="overview-title"><div class="section-heading"><h2 id="overview-title">最近 24 小时</h2><span id="overview-total" class="muted"></span></div><div id="metrics" class="metrics"></div></section>
+      <div class="overview-grid">
+        <section class="panel attention-panel" aria-labelledby="attention-title"><div class="section-heading"><h2 id="attention-title">需要关注 <span id="attention-count" class="count"></span></h2><span class="muted">各任务当前情况</span></div><div id="attention"></div></section>
+        <section class="panel" aria-labelledby="trend-title"><div class="section-heading"><h2 id="trend-title">近 7 天执行</h2><span class="muted">按启动日统计</span></div><div id="trend" class="trend" role="img" aria-label="近七天运行结果分布"></div><div class="legend"><span class="success">● 成功</span><span class="partial">● 部分成功</span><span class="failed">● 失败</span><span class="unknown">● 待确认</span><span class="running">● 执行中</span></div><p class="footnote">只统计已发现的运行；没有记录不等于当天没有执行。</p></section>
+      </div>
+      <section aria-labelledby="tasks-title"><div class="section-heading"><h2 id="tasks-title">全部任务 <span id="task-count" class="count"></span></h2><span id="task-status" class="muted"></span></div><div id="tasks" class="tasks"></div></section>
+      <section class="panel history-panel" id="history-section" aria-labelledby="history-title"><div class="section-heading"><h2 id="history-title">运行历史</h2><span id="history-count" class="muted" aria-live="polite"></span></div>
+        <form id="filters" class="filters"><label>任务<select id="task-filter"><option value="">全部任务</option></select></label><label>时间范围<select id="period-filter"><option value="7">最近 7 天</option><option value="1">最近 24 小时</option><option value="30">最近 30 天</option><option value="90">最近 90 天</option><option value="custom">自定义日期</option></select></label><label>结果<select id="outcome-filter"><option value="">全部结果</option><option value="success">成功</option><option value="partial">部分成功</option><option value="failed">失败</option><option value="unknown">待确认</option><option value="running">执行中</option></select></label><button id="reset" class="text-button" type="button">重置筛选</button><div id="custom-dates" class="date-fields" hidden><label>开始日期<input type="date" id="date-from"></label><label>结束日期<input type="date" id="date-to"></label></div></form>
+        <div id="history"></div><button id="more" class="load-more" type="button" hidden>再显示 30 条</button>
+      </section>
+      <footer><p id="coverage"></p><details><summary>数据来源与判断口径</summary><p>只读读取本机 Codex 任务配置、运行索引及明确关联的会话完成回执。普通定时任务按一次运行会话记账，后续重试反映在该记录的最新结果；原对话定时任务按触发轮次分别记账。耗时包含会话内等待与重试。</p><p>“原文明确”表示最终回复明确陈述结果；“规则推断”表示根据回复内容推断。两者均不是对外部系统的再次验收。已读、已归档不作为成功依据。时间范围按启动时间筛选。</p><p>任务时间表按当前配置展示，不追溯历史配置。“疑似逾期”仅在调度器下次运行时间已过两小时后提示，不能据此认定漏跑。数据超过两小时未更新时，优先检查同步；电脑休眠期间无法采集。</p><p>公开页面仅保留精简摘要。完整日志仍在本机；“在 Codex 查看”链接需要安装 Codex 且能访问原任务，手机通常无法打开。</p></details></footer>
+    </div>
+  </main>
+</body>
+</html>
