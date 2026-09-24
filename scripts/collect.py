@@ -261,7 +261,7 @@ def collect(home, output, state_dir, now=None, days=90):
         months.setdefault(month, []).append(run)
     content_hash = digest({'tasks': tasks, 'runs': runs, 'warnings': sorted(set(warnings)), 'capabilities': source.capabilities})
     changed = content_hash != old.get('content_hash')
-    publish = changed or now - epoch(old.get('collected_at')) >= 3600
+    publish = changed or old.get('heartbeat_minutes') != 120 or old.get('stale_after_minutes') != 180 or now - epoch(old.get('collected_at')) >= 7200
     if publish:
         # Immutable, content-addressed shards prevent mixed-version browser reads.
         shards = []
@@ -271,7 +271,7 @@ def collect(home, output, state_dir, now=None, days=90):
             shards.append({'file': filename, 'count': len(records)})
         manifest = {'schema_version': VERSION, 'collected_at': iso(now), 'content_hash': content_hash,
                     'timezone': 'Asia/Shanghai', 'retention_days': days, 'collection_interval_minutes': 30,
-                    'heartbeat_minutes': 60, 'stale_after_minutes': 120, 'run_count': len(runs),
+                    'heartbeat_minutes': 120, 'stale_after_minutes': 180, 'run_count': len(runs),
                     'window_start': iso(cutoff), 'coverage_start': runs[-1]['started_at'] if runs else None,
                     'warnings': sorted(set(warnings)), 'tasks': tasks, 'shards': shards,
                     'source_capabilities': source.capabilities,

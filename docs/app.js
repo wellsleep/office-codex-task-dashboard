@@ -10,7 +10,7 @@ const isStale = () => Date.now()-Date.parse(data.collected_at)>data.stale_after_
 const latest = task => runs.find(r=>r.id===task.latest_run_id);
 function setHistoryTask(id){$('task-filter').value=id;$('period-filter').value='90';$('outcome-filter').value='';pageLimit=30;renderHistory();$('history-section').scrollIntoView({behavior:'smooth'});}
 
-function renderFreshness(){const stale=isStale();$('freshness').className='pill '+(stale?'partial':'success');$('freshness').textContent=stale?'同步已过期':'同步正常';$('sync-time').textContent='最近采集 '+date(data.collected_at);const notes=[...data.warnings];if(stale)notes.unshift('已超过两小时未更新。页面展示上次同步结果，请检查 Mac 是否在线及采集程序。');$('source-warning').hidden=!notes.length;$('source-warning').textContent=notes.join(' ');}
+function renderFreshness(){const stale=isStale();$('freshness').className='pill '+(stale?'partial':'success');$('freshness').textContent=stale?'同步已过期':'同步正常';$('sync-time').textContent='最近采集 '+date(data.collected_at);const notes=[...data.warnings];if(stale)notes.unshift('已超过三小时未更新。页面展示上次同步结果，请检查 Mac 是否在线及采集程序。');$('source-warning').hidden=!notes.length;$('source-warning').textContent=notes.join(' ');}
 
 function renderOverview(){const recent=runs.filter(r=>Date.now()-Date.parse(r.started_at)<=86400000);$('overview-total').textContent=recent.length+' 次已发现运行';$('metrics').replaceChildren(...Object.keys(labels).map(key=>{const card=el('div','metric');card.append(el('div','metric-label',labels[key]),el('div','metric-value '+key,recent.filter(r=>r.outcome===key).length));return card;}));
  const priorities={failed:0,partial:1,unknown:2,running:3,success:4};

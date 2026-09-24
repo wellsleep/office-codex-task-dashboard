@@ -144,10 +144,12 @@ class CollectionTests(unittest.TestCase):
         self.assertTrue(self.f.records()[0]['evidence_stale'])
         self.assertEqual(self.f.records()[0]['outcome'],'success')
 
-    def test_no_change_does_not_publish_until_hourly_heartbeat(self):
+    def test_no_change_does_not_publish_until_two_hour_heartbeat(self):
         self.f.add_run();self.f.run()
         self.assertFalse(self.f.run(NOW+1800)['publish'])
-        self.assertTrue(self.f.run(NOW+3600)['publish'])
+        self.assertFalse(self.f.run(NOW+3600)['publish'])
+        self.assertFalse(self.f.run(NOW+7199)['publish'])
+        self.assertTrue(self.f.run(NOW+7200)['publish'])
 
     def test_source_changes_do_not_duplicate_identity(self):
         self.f.add_run();self.f.run()
