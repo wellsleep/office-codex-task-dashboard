@@ -17,7 +17,7 @@ from collect import ROOT, atomic_json, collect, iso
 
 def git(*args, check=True):
     result = subprocess.run(['git', *args], cwd=ROOT, text=True, capture_output=True, timeout=120,
-                            env={**os.environ, 'GIT_TERMINAL_PROMPT':'0', 'GIT_SSH_COMMAND':'ssh -o Hostname=ssh.github.com -p 443 -o HostKeyAlias=github.com -o BatchMode=yes -o ConnectTimeout=15 -o ServerAliveInterval=10 -o ServerAliveCountMax=2 -o StrictHostKeyChecking=yes'})
+                            env={**os.environ, 'GIT_TERMINAL_PROMPT':'0'})
     if check and result.returncode:
         raise RuntimeError('git ' + args[0] + ' failed: ' + result.stderr.strip()[:300])
     return result.stdout.rstrip('\n')
