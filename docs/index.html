@@ -16,7 +16,7 @@
     <div id="loading" role="status" class="notice">正在读取运行记录…</div>
     <div id="error" role="alert" class="notice error" hidden></div>
     <div id="dashboard" hidden>
-      <section class="sync-strip" aria-label="同步情况"><div><span id="freshness" class="pill"></span><span id="sync-time"></span></div><span class="muted">每 30 分钟采集 · 北京时间</span></section>
+      <section class="sync-strip" aria-label="同步情况"><div><span id="freshness" class="pill"></span><span id="sync-time"></span></div><span id="sync-policy" class="muted"></span></section>
       <div id="source-warning" class="notice warning" hidden></div>
       <section aria-labelledby="overview-title"><div class="section-heading"><h2 id="overview-title">最近 24 小时</h2><span id="overview-total" class="muted"></span></div><div id="metrics" class="metrics"></div></section>
       <div class="overview-grid">
@@ -28,7 +28,7 @@
         <form id="filters" class="filters"><label>任务<select id="task-filter"><option value="">全部任务</option></select></label><label>时间范围<select id="period-filter"><option value="7">最近 7 天</option><option value="1">最近 24 小时</option><option value="30">最近 30 天</option><option value="90">最近 90 天</option><option value="custom">自定义日期</option></select></label><label>结果<select id="outcome-filter"><option value="">全部结果</option><option value="success">成功</option><option value="partial">部分成功</option><option value="failed">失败</option><option value="unknown">待确认</option><option value="running">执行中</option></select></label><button id="reset" class="text-button" type="button">重置筛选</button><div id="custom-dates" class="date-fields" hidden><label>开始日期<input type="date" id="date-from"></label><label>结束日期<input type="date" id="date-to"></label></div></form>
         <div id="history"></div><button id="more" class="load-more" type="button" hidden>再显示 30 条</button>
       </section>
-      <footer><p id="coverage"></p><details><summary>数据来源与判断口径</summary><p>只读读取本机 Codex 任务配置、运行索引及明确关联的会话完成回执。普通定时任务按一次运行会话记账，后续重试反映在该记录的最新结果；原对话定时任务按触发轮次分别记账。耗时包含会话内等待与重试。</p><p>“原文明确”表示最终回复明确陈述结果；“规则推断”表示根据回复内容推断。两者均不是对外部系统的再次验收。已读、已归档不作为成功依据。时间范围按启动时间筛选。</p><p>任务时间表按当前配置展示，不追溯历史配置。“疑似逾期”仅在调度器下次运行时间已过两小时后提示，不能据此认定漏跑。数据超过两小时未更新时，优先检查同步；电脑休眠期间无法采集。</p><p>公开页面仅保留精简摘要。完整日志仍在本机；“在 Codex 查看”链接需要安装 Codex 且能访问原任务，手机通常无法打开。</p></details></footer>
+      <footer><p id="coverage"></p><details><summary>数据来源与判断口径</summary><p>只读读取本机 Codex 任务配置、运行索引及明确关联的会话完成回执。普通定时任务按一次运行会话记账，后续重试反映在该记录的最新结果；原对话定时任务按触发轮次分别记账。耗时包含会话内等待与重试。</p><p>“原文明确”表示最终回复明确陈述结果；“规则推断”表示根据回复内容推断。两者均不是对外部系统的再次验收。已读、已归档不作为成功依据。时间范围按启动时间筛选。</p><p>任务时间表按当前配置展示，不追溯历史配置。“疑似逾期”仅在调度器下次运行时间已过两小时后提示，不能据此认定漏跑。<span id="sync-policy-detail"></span>电脑休眠期间无法采集。</p><p>公开页面仅保留精简摘要。完整日志仍在本机；“在 Codex 查看”链接需要安装 Codex 且能访问原任务，手机通常无法打开。</p></details></footer>
     </div>
   </main>
 </body>

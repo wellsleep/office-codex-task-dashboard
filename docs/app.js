@@ -7,10 +7,11 @@ const badge = (outcome, text) => el('span','pill '+outcome,text || labels[outcom
 const date = value => value ? new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(value)) : '—';
 const localDay = value => new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
 const isStale = () => Date.now()-Date.parse(data.collected_at)>data.stale_after_minutes*60000;
+const minutesLabel = minutes => minutes % 60 === 0 ? (minutes / 60)+' 小时' : minutes+' 分钟';
 const latest = task => runs.find(r=>r.id===task.latest_run_id);
 function setHistoryTask(id){$('task-filter').value=id;$('period-filter').value='90';$('outcome-filter').value='';pageLimit=30;renderHistory();$('history-section').scrollIntoView({behavior:'smooth'});}
 
-function renderFreshness(){const stale=isStale();$('freshness').className='pill '+(stale?'partial':'success');$('freshness').textContent=stale?'同步已过期':'同步正常';$('sync-time').textContent='最近采集 '+date(data.collected_at);const notes=[...data.warnings];if(stale)notes.unshift('已超过三小时未更新。页面展示上次同步结果，请检查 Mac 是否在线及采集程序。');$('source-warning').hidden=!notes.length;$('source-warning').textContent=notes.join(' ');}
+function renderFreshness(){const stale=isStale();$('sync-policy').textContent='每 '+minutesLabel(data.collection_interval_minutes)+'采集 · 无变化每 '+minutesLabel(data.heartbeat_minutes)+'心跳 · 北京时间';$('sync-policy-detail').textContent='有变化在采集后发布；无变化每 '+minutesLabel(data.heartbeat_minutes)+'发布心跳。数据超过 '+minutesLabel(data.stale_after_minutes)+'未更新时，优先检查同步；';$('freshness').className='pill '+(stale?'partial':'success');$('freshness').textContent=stale?'同步已过期':'同步正常';$('sync-time').textContent='最近采集 '+date(data.collected_at);const notes=[...data.warnings];if(stale)notes.unshift('已超过 '+minutesLabel(data.stale_after_minutes)+'未更新。页面展示上次同步结果，请检查 Mac 是否在线及采集程序。');$('source-warning').hidden=!notes.length;$('source-warning').textContent=notes.join(' ');}
 
 function renderOverview(){const recent=runs.filter(r=>Date.now()-Date.parse(r.started_at)<=86400000);$('overview-total').textContent=recent.length+' 次已发现运行';$('metrics').replaceChildren(...Object.keys(labels).map(key=>{const card=el('div','metric');card.append(el('div','metric-label',labels[key]),el('div','metric-value '+key,recent.filter(r=>r.outcome===key).length));return card;}));
  const priorities={failed:0,partial:1,unknown:2,running:3,success:4};
