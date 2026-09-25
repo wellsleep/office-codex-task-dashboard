@@ -1,5 +1,37 @@
 [
   {
+    "id": "b0cb7c71d21ef64df3aa",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-09-25T20:01:26Z",
+    "completed_at": "2026-09-25T20:03:04Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
+    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 98
+  },
+  {
+    "id": "25a7eee0c653c9052575",
+    "automation_id": "baymax-1",
+    "thread_id": "01a0d9f1-2aee-74a1-a31b-79bc04edd7ec",
+    "started_at": "2026-09-25T19:00:56Z",
+    "completed_at": "2026-09-25T19:06:16Z",
+    "outcome": "success",
+    "confidence": "explicit",
+    "basis": "2026-09-26 Baymax 每日快照已完成并发布。按仓库 skill 采集的 50 天创建窗口内共有 725 条事项，全部读取并展开，失败 0；10 个文件的快照包校验通过。采集使用 workers 4，未触发 HTTP 降级重试。\n提交 8e4a5ffbd5cec4457bbb688b54eead2eef923413 已推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，工作树干净。查看回执。",
+    "summary": "2026-09-26 Baymax 每日快照已完成并发布。按仓库 skill 采集的 50 天创建窗口内共有 725 条事项，全部读取并展开，失败 0；10 个文件的快照包校验通过。采集使用 workers 4，未触发 HTTP 降级重试。\n\n提交 8e4a5ffbd5cec4457bbb688b54eead2eef923413 已推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，工作树干净。查看…",
+    "detail": "2026-09-26 Baymax 每日快照已完成并发布。按仓库 skill 采集的 50 天创建窗口内共有 725 条事项，全部读取并展开，失败 0；10 个文件的快照包校验通过。采集使用 workers 4，未触发 HTTP 降级重试。\n\n提交 8e4a5ffbd5cec4457bbb688b54eead2eef923413 已推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，工作树干净。查看回执。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 320
+  },
+  {
     "id": "4fff7f8af54c9b2816de",
     "automation_id": "automation",
     "thread_id": "01a0cf35-f402-7983-ac61-c2790159ea40",
