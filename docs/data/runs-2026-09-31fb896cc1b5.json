@@ -1,5 +1,37 @@
 [
   {
+    "id": "9f1d720d080126254555",
+    "automation_id": "it",
+    "thread_id": "01a0da5f-f429-7863-a83a-fd4a78352c53",
+    "started_at": "2026-09-25T21:01:56Z",
+    "completed_at": "2026-09-25T21:03:32Z",
+    "outcome": "failed",
+    "confidence": "explicit",
+    "basis": "本轮状态：failed，停在前置验收。 已完整读取设计规范和 $maintain-knowledge-base，并在获准网络环境中完成五仓 fetch。工作树均干净，但 system_knowledge_v1 本地 HEAD a2b5ec4 比 upstream b0ea27d 超前一个既有提交（ahead/behind 1 0），不满足维护 Skill 的启动条件。",
+    "summary": "本轮状态：failed，停在前置验收。 已完整读取设计规范和 $maintain-knowledge-base，并在获准网络环境中完成五仓 fetch。工作树均干净，但 system_knowledge_v1 本地 HEAD a2b5ec4 比 upstream b0ea27d 超前一个既有提交（ahead/behind 1 0），不满足维护 Skill 的启动条件。\n\n其余四仓与远端一致：code_base 9437ecf、lark_…",
+    "detail": "本轮状态：failed，停在前置验收。 已完整读取设计规范和 $maintain-knowledge-base，并在获准网络环境中完成五仓 fetch。工作树均干净，但 system_knowledge_v1 本地 HEAD a2b5ec4 比 upstream b0ea27d 超前一个既有提交（ahead/behind 1 0），不满足维护 Skill 的启动条件。\n\n其余四仓与远端一致：code_base 9437ecf、lark_wiki_sync 5f5ffc7a、it_support_tickets c3e1613、coop_info 61b68cd。本轮没有生成来源事件或知识变更；未运行来源生产、编译、提交、推送或 coop 采集。因此没有新游标、编译回执或本轮 coop freshness 结论。需先通过该既有提交的所属发布流程使 Matrix 控制仓库与 upstream 一致，再重新执行维护。\n\n已将本轮结果和时间写入 自动化记录。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 96
+  },
+  {
+    "id": "b0cb7c71d21ef64df3aa",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-09-25T20:01:26Z",
+    "completed_at": "2026-09-25T20:03:04Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
+    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 98
+  },
+  {
     "id": "25a7eee0c653c9052575",
     "automation_id": "baymax-1",
     "thread_id": "01a0d9f1-2aee-74a1-a31b-79bc04edd7ec",

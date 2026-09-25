@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-09-25T20:08:00Z",
-  "content_hash": "e421998f4517767b281e63fe062dcb2ba1aa7243b0ffce7d36009f2aa0ea6b27",
+  "collected_at": "2026-09-25T21:08:12Z",
+  "content_hash": "850517faeec8f2bab615dab931c3bbdbd90b18ff46402ddbc3b66a0f6917feba",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
-  "run_count": 102,
-  "window_start": "2026-06-27T20:08:00Z",
+  "run_count": 103,
+  "window_start": "2026-06-27T21:08:12Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [],
   "tasks": [
@@ -70,12 +70,12 @@
       "status": "ACTIVE",
       "kind": "cron",
       "schedule": "每周三、六 05:00",
-      "last_run_at": "2026-09-23T01:41:41Z",
-      "next_run_at": "2026-09-25T21:01:45Z",
-      "latest_run_id": "2597ac04930ce9fa5d06",
+      "last_run_at": "2026-09-25T21:01:56Z",
+      "next_run_at": "2026-09-29T21:00:17Z",
+      "latest_run_id": "9f1d720d080126254555",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 15
+      "run_count": 16
     },
     {
       "id": "it-2",
@@ -106,8 +106,8 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-09-0ef5d4d9717f.json",
-      "count": 56
+      "file": "runs-2026-09-31fb896cc1b5.json",
+      "count": 57
     },
     {
       "file": "runs-2026-08-545aaea4cb90.json",
