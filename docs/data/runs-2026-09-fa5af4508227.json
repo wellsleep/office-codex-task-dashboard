@@ -1,5 +1,37 @@
 [
   {
+    "id": "dad4b725c3361fc0e498",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-09-26T20:01:02Z",
+    "completed_at": "2026-09-26T20:02:33Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
+    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 91
+  },
+  {
+    "id": "17c4c2ece69448ebcce8",
+    "automation_id": "baymax-1",
+    "thread_id": "01a0df17-27d4-75d3-a971-dd4910dfcbc6",
+    "started_at": "2026-09-26T19:00:31Z",
+    "completed_at": "2026-09-26T19:05:46Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "2026-09-27 Baymax 每日快照已成功发布。 项目 1 共读取 2,886 条事项；50 天创建窗口内的 725 条全部采集并通过校验，展开失败 0 条。首轮使用 4 个 worker，无降级重试。\n\n回执和索引已随 7 个周分片发布。提交为 b479af492702b05ac6136d40afe7325a431b3536；推送后重新 fetch，确认 HEAD、origin/master 和上游一致，ahead/behin…",
+    "detail": "2026-09-27 Baymax 每日快照已成功发布。 项目 1 共读取 2,886 条事项；50 天创建窗口内的 725 条全部采集并通过校验，展开失败 0 条。首轮使用 4 个 worker，无降级重试。\n\n回执和索引已随 7 个周分片发布。提交为 b479af492702b05ac6136d40afe7325a431b3536；推送后重新 fetch，确认 HEAD、origin/master 和上游一致，ahead/behind 为 0 0，工作区干净。",
+    "error": "2026-09-27 Baymax 每日快照已成功发布。 项目 1 共读取 2,886 条事项；50 天创建窗口内的 725 条全部采集并通过校验，展开失败 0 条。首轮使用 4 个 worker，无降级重试。",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 315
+  },
+  {
     "id": "cc221f45679e427aec3e",
     "automation_id": "automation",
     "thread_id": "01a0cf35-f402-7983-ac61-c2790159ea40",
