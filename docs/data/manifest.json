@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-09-27T09:13:31Z",
+  "collected_at": "2026-09-27T11:13:49Z",
   "content_hash": "9f0492409e1a5f7bac62cff8f36d92861c77e2e5be2090984b6b86efbc29f297",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
@@ -8,7 +8,7 @@
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
   "run_count": 107,
-  "window_start": "2026-06-29T09:13:31Z",
+  "window_start": "2026-06-29T11:13:49Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [],
   "tasks": [
