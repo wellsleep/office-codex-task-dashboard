@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-09-28T17:18:52Z",
-  "content_hash": "ac0e4a01a382176d23162fa85d47d55b3c14c775d68b4ea3a723b9116958baba",
+  "collected_at": "2026-09-28T19:19:14Z",
+  "content_hash": "459c9c23b40a4d056c89fbfe7f029ce3a9359f87845876a4823cdcaf264aebe8",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
-  "run_count": 112,
-  "window_start": "2026-06-30T17:18:52Z",
+  "run_count": 113,
+  "window_start": "2026-06-30T19:19:14Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
@@ -46,12 +46,12 @@
       "status": "ACTIVE",
       "kind": "cron",
       "schedule": "每天 03:00",
-      "last_run_at": "2026-09-27T19:01:37Z",
-      "next_run_at": "2026-09-28T19:01:25Z",
-      "latest_run_id": "bdc0390232099a632952",
+      "last_run_at": "2026-09-28T19:01:42Z",
+      "next_run_at": "2026-09-29T19:00:27Z",
+      "latest_run_id": "4acd482f7274dc00ad71",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 27
+      "run_count": 28
     },
     {
       "id": "codex",
@@ -108,8 +108,8 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-09-e96c25ebf072.json",
-      "count": 66
+      "file": "runs-2026-09-e55534e05b21.json",
+      "count": 67
     },
     {
       "file": "runs-2026-08-545aaea4cb90.json",
