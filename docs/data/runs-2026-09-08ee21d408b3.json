@@ -1,5 +1,21 @@
 [
   {
+    "id": "6dec470e3f5f044d9a20",
+    "automation_id": "automation-2",
+    "thread_id": "01a0e5f6-7492-78d0-bf42-90915830524f",
+    "started_at": "2026-09-28T03:02:09Z",
+    "completed_at": "2026-09-28T03:44:29Z",
+    "outcome": "success",
+    "confidence": "explicit",
+    "basis": "规则已写入自动化并回读确认：多维表格、Excel/在线表格无法读取时，记录并披露后跳过。本次重试已完成发送与归档。\n周区间：9/21 00:00—9/28 00:00（上海），W39 v1。",
+    "summary": "规则已写入自动化并回读确认：多维表格、Excel/在线表格无法读取时，记录并披露后跳过。本次重试已完成发送与归档。\n\n- 周区间：9/21 00:00—9/28 00:00（上海），W39 v1。\n- 采集：2页、68条外层消息；631条有效证据，73项事件、1份周报。\n- 文档：6篇正文、3个工作表、4条需求及36条查验记录。\n- 未解析：202项媒体/嵌入资源；另按新规则跳过1个CDG多维表。\n- 发送：[标识已隐藏]；目标、身份、…",
+    "detail": "规则已写入自动化并回读确认：多维表格、Excel/在线表格无法读取时，记录并披露后跳过。本次重试已完成发送与归档。\n\n- 周区间：9/21 00:00—9/28 00:00（上海），W39 v1。\n- 采集：2页、68条外层消息；631条有效证据，73项事件、1份周报。\n- 文档：6篇正文、3个工作表、4条需求及36条查验记录。\n- 未解析：202项媒体/嵌入资源；另按新规则跳过1个CDG多维表。\n- 发送：[标识已隐藏]；目标、身份、未删除状态及规范化正文摘要均验证通过。规范化仅处理CLI标题转换和空白。\n- Git：0439837c839e53e171b0eaf0c58fbeda60c75148；push成功，再次fetch后HEAD=upstream，0 0。\n- event/manifest SHA-256分别为 53700a3ab2e8…、3f777aec5466…，完整值见回执。\n\n版本包：[本地路径]\n\n查看周报 · 完整发布回执",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 3,
+    "duration_seconds": 2540
+  },
+  {
     "id": "81aa83708d41a9a2ff9a",
     "automation_id": "it-2",
     "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
@@ -45,7 +61,8 @@
     "error": "",
     "source": "heartbeat_marker",
     "turn_count": 1,
-    "duration_seconds": 99
+    "duration_seconds": 99,
+    "evidence_stale": true
   },
   {
     "id": "71b95f050bd1a803d9e1",
@@ -109,23 +126,24 @@
     "error": "",
     "source": "heartbeat_marker",
     "turn_count": 1,
-    "duration_seconds": 2
+    "duration_seconds": 2,
+    "evidence_stale": true
   },
   {
     "id": "9f1d720d080126254555",
     "automation_id": "it",
     "thread_id": "01a0da5f-f429-7863-a83a-fd4a78352c53",
     "started_at": "2026-09-25T21:01:56Z",
-    "completed_at": "2026-09-28T02:09:46Z",
+    "completed_at": "2026-09-28T02:50:35Z",
     "outcome": "unknown",
     "confidence": "unknown",
     "basis": "最终回复没有足够明确的整体结果，需人工确认。",
-    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
-    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "已确认并推送 Matrix 的本地提交 a2b5ec4 到 origin/main。提交差异检查和云资源导航检查均通过；推送后重新 fetch，确认本地 HEAD 与 upstream 相同、ahead/behind 为 0 0，工作树干净。\n\n本次只发布了这个既有提交，尚未重跑每周 Matrix 维护。",
+    "detail": "已确认并推送 Matrix 的本地提交 a2b5ec4 到 origin/main。提交差异检查和云资源导航检查均通过；推送后重新 fetch，确认本地 HEAD 与 upstream 相同、ahead/behind 为 0 0，工作树干净。\n\n本次只发布了这个既有提交，尚未重跑每周 Matrix 维护。",
     "error": "",
     "source": "run_index",
-    "turn_count": 1,
-    "duration_seconds": 191270
+    "turn_count": 2,
+    "duration_seconds": 193719
   },
   {
     "id": "b0cb7c71d21ef64df3aa",
@@ -173,7 +191,8 @@
     "error": "<message>2026-09-25 群聊归档部分成功：扫描17群、归档19条，2个合并包及私聊均已回读；【CDG】SKFR&amp;CN Customs 有1条无效消息。</message>",
     "source": "heartbeat_marker",
     "turn_count": 1,
-    "duration_seconds": 64
+    "duration_seconds": 64,
+    "evidence_stale": true
   },
   {
     "id": "598b8e68cb145fd2ee79",
@@ -221,7 +240,8 @@
     "error": "<message>2026-09-24 群聊归档部分成功：扫描17群、归档160条，14个合并包及私聊均已回读；6个包合计有9条无效消息。</message>",
     "source": "heartbeat_marker",
     "turn_count": 1,
-    "duration_seconds": 99
+    "duration_seconds": 99,
+    "evidence_stale": true
   },
   {
     "id": "a13c644ac6754d97ab13",
@@ -260,16 +280,16 @@
     "automation_id": "automation",
     "thread_id": "01a0cf35-f402-7983-ac61-c2790159ea40",
     "started_at": "2026-09-23T17:00:14Z",
-    "completed_at": "2026-09-27T17:01:46Z",
+    "completed_at": "2026-09-28T02:59:12Z",
     "outcome": "unknown",
     "confidence": "unknown",
     "basis": "最终回复没有足够明确的整体结果，需人工确认。",
-    "summary": "<heartbeat>\n  <automation_id>automation</automation_id>\n  <decision>NOTIFY</decision>\n  <message>2026-09-27 群聊归档成功：扫描17群，处理37条消息并发送5个合并包；合并包和[接收人]简报均已回读确认。</message>\n</heartbeat>",
-    "detail": "<heartbeat>\n  <automation_id>automation</automation_id>\n  <decision>NOTIFY</decision>\n  <message>2026-09-27 群聊归档成功：扫描17群，处理37条消息并发送5个合并包；合并包和[接收人]简报均已回读确认。</message>\n</heartbeat>",
+    "summary": "已补齐近五个归档日（9 月 23–27 日）的回读。9 月 26 日确实缺少归档：目标群没有该日合并包，[接收人]私聊也没有该日简报。只读扫描发现 3 个源群共 17 条消息；我已正式补发 3 个合并包和 1 条简报，回读均通过。\n\n其余四天的 31 个合并包和 4 条简报也已重新核验。现在五天合计 34 个合并包、5 条简报都有回读证据。9 月 26 日缺跑的原因无法仅凭现有记录确定，不能确认是 Codex 额度耗尽。",
+    "detail": "已补齐近五个归档日（9 月 23–27 日）的回读。9 月 26 日确实缺少归档：目标群没有该日合并包，[接收人]私聊也没有该日简报。只读扫描发现 3 个源群共 17 条消息；我已正式补发 3 个合并包和 1 条简报，回读均通过。\n\n其余四天的 31 个合并包和 4 条简报也已重新核验。现在五天合计 34 个合并包、5 条简报都有回读证据。9 月 26 日缺跑的原因无法仅凭现有记录确定，不能确认是 Codex 额度耗尽。",
     "error": "",
     "source": "run_index",
-    "turn_count": 8,
-    "duration_seconds": 345692
+    "turn_count": 1,
+    "duration_seconds": 381538
   },
   {
     "id": "894b28f41697ed888996",
