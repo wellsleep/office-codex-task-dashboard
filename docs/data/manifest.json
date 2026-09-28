@@ -1,16 +1,18 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-09-28T02:16:05Z",
-  "content_hash": "8c8576eac3f7b7af3fc26075cb5b576d858b20edaed532a34696ae184830d5c0",
+  "collected_at": "2026-09-28T03:16:19Z",
+  "content_hash": "7893ad86de00cd137e81977b2ea4d6b2a7882febe5636a3a012eb87774959828",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
-  "run_count": 110,
-  "window_start": "2026-06-30T02:16:05Z",
+  "run_count": 111,
+  "window_start": "2026-06-30T03:16:19Z",
   "coverage_start": "2026-07-31T17:02:05Z",
-  "warnings": [],
+  "warnings": [
+    "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
+  ],
   "tasks": [
     {
       "id": "automation",
@@ -31,12 +33,12 @@
       "status": "ACTIVE",
       "kind": "cron",
       "schedule": "每周一 11:00",
-      "last_run_at": "2026-09-21T03:01:43Z",
-      "next_run_at": "2026-09-28T03:01:40Z",
-      "latest_run_id": null,
-      "coverage_gap": true,
+      "last_run_at": "2026-09-28T03:02:09Z",
+      "next_run_at": "2026-10-05T03:01:39Z",
+      "latest_run_id": "6dec470e3f5f044d9a20",
+      "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 0
+      "run_count": 1
     },
     {
       "id": "baymax-1",
@@ -106,8 +108,8 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-09-8e00b282f549.json",
-      "count": 64
+      "file": "runs-2026-09-ccb62be132c1.json",
+      "count": 65
     },
     {
       "file": "runs-2026-08-545aaea4cb90.json",
