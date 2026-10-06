@@ -1,5 +1,37 @@
 [
   {
+    "id": "68175de0bd8e30aa0e3d",
+    "automation_id": "it",
+    "thread_id": "01a11306-1267-7e91-91b6-a48b048e7a44",
+    "started_at": "2026-10-06T21:02:07Z",
+    "completed_at": null,
+    "outcome": "running",
+    "confidence": "unknown",
+    "basis": "已开始，尚未发现完成回执。",
+    "summary": "已开始，尚未发现完成回执。",
+    "detail": "已开始，尚未发现完成回执。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": null
+  },
+  {
+    "id": "f09d91976d7dd9b6e40b",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-10-06T20:01:37Z",
+    "completed_at": "2026-10-06T20:05:25Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
+    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 228
+  },
+  {
     "id": "9bc0bb3978ef86a07c37",
     "automation_id": "baymax-1",
     "thread_id": "01a11296-d412-7671-942a-544eee70b3eb",
