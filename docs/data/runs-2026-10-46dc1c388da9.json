@@ -1,5 +1,37 @@
 [
   {
+    "id": "f09d91976d7dd9b6e40b",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-10-06T20:01:37Z",
+    "completed_at": "2026-10-06T20:05:25Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
+    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 228
+  },
+  {
+    "id": "9bc0bb3978ef86a07c37",
+    "automation_id": "baymax-1",
+    "thread_id": "01a11296-d412-7671-942a-544eee70b3eb",
+    "started_at": "2026-10-06T19:00:36Z",
+    "completed_at": "2026-10-06T19:05:55Z",
+    "outcome": "success",
+    "confidence": "explicit",
+    "basis": "2026-10-07 的 Baymax 项目 1 每日快照已完成并发布。50 天创建窗口内共 600 条事项，600 条均成功展开，失败 0；11 个文件通过完整性校验。本次采集使用 workers=4，未触发降级重试。\n回执和索引已随提交 424af995a983649119da59112aefdbdbce733371 推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，领先/落后为 0 0，工作区干净。",
+    "summary": "2026-10-07 的 Baymax 项目 1 每日快照已完成并发布。50 天创建窗口内共 600 条事项，600 条均成功展开，失败 0；11 个文件通过完整性校验。本次采集使用 workers=4，未触发降级重试。\n\n回执和索引已随提交 424af995a983649119da59112aefdbdbce733371 推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，领先/落后为 0 0，工…",
+    "detail": "2026-10-07 的 Baymax 项目 1 每日快照已完成并发布。50 天创建窗口内共 600 条事项，600 条均成功展开，失败 0；11 个文件通过完整性校验。本次采集使用 workers=4，未触发降级重试。\n\n回执和索引已随提交 424af995a983649119da59112aefdbdbce733371 推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，领先/落后为 0 0，工作区干净。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 319
+  },
+  {
     "id": "b5d6efdf9f5b7ce63b26",
     "automation_id": "automation",
     "thread_id": "01a0cf35-f402-7983-ac61-c2790159ea40",
