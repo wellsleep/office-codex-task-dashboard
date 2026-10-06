@@ -1,5 +1,37 @@
 [
   {
+    "id": "9bc0bb3978ef86a07c37",
+    "automation_id": "baymax-1",
+    "thread_id": "01a11296-d412-7671-942a-544eee70b3eb",
+    "started_at": "2026-10-06T19:00:36Z",
+    "completed_at": "2026-10-06T19:05:55Z",
+    "outcome": "success",
+    "confidence": "explicit",
+    "basis": "2026-10-07 的 Baymax 项目 1 每日快照已完成并发布。50 天创建窗口内共 600 条事项，600 条均成功展开，失败 0；11 个文件通过完整性校验。本次采集使用 workers=4，未触发降级重试。\n回执和索引已随提交 424af995a983649119da59112aefdbdbce733371 推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，领先/落后为 0 0，工作区干净。",
+    "summary": "2026-10-07 的 Baymax 项目 1 每日快照已完成并发布。50 天创建窗口内共 600 条事项，600 条均成功展开，失败 0；11 个文件通过完整性校验。本次采集使用 workers=4，未触发降级重试。\n\n回执和索引已随提交 424af995a983649119da59112aefdbdbce733371 推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，领先/落后为 0 0，工…",
+    "detail": "2026-10-07 的 Baymax 项目 1 每日快照已完成并发布。50 天创建窗口内共 600 条事项，600 条均成功展开，失败 0；11 个文件通过完整性校验。本次采集使用 workers=4，未触发降级重试。\n\n回执和索引已随提交 424af995a983649119da59112aefdbdbce733371 推送至 origin/master。推送后重新 fetch，确认本地、远端和上游提交一致，领先/落后为 0 0，工作区干净。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 319
+  },
+  {
+    "id": "b5d6efdf9f5b7ce63b26",
+    "automation_id": "automation",
+    "thread_id": "01a0cf35-f402-7983-ac61-c2790159ea40",
+    "started_at": "2026-10-06T17:01:06Z",
+    "completed_at": "2026-10-06T17:02:07Z",
+    "outcome": "partial",
+    "confidence": "inferred",
+    "basis": "结果报告存在无效或丢失消息，按部分成功处理。",
+    "summary": "<heartbeat>\n  <automation_id>automation</automation_id>\n  <decision>NOTIFY</decision>\n  <message>2026-10-06 群聊归档部分成功：扫描17群、处理43条消息，3个合并包及[接收人]简报均已回读；其中1条消息无效。</message>\n</heartbeat>",
+    "detail": "<heartbeat>\n  <automation_id>automation</automation_id>\n  <decision>NOTIFY</decision>\n  <message>2026-10-06 群聊归档部分成功：扫描17群、处理43条消息，3个合并包及[接收人]简报均已回读；其中1条消息无效。</message>\n</heartbeat>",
+    "error": "<message>2026-10-06 群聊归档部分成功：扫描17群、处理43条消息，3个合并包及[接收人]简报均已回读；其中1条消息无效。</message>",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 61
+  },
+  {
     "id": "274cf6de98286c048947",
     "automation_id": "it-2",
     "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
