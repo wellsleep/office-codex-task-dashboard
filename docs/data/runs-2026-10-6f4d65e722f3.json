@@ -1,5 +1,21 @@
 [
   {
+    "id": "f5d287bf09587b054eb6",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-10-07T20:00:42Z",
+    "completed_at": "2026-10-07T20:01:57Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
+    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 75
+  },
+  {
     "id": "4624f068fa29bb0bded7",
     "automation_id": "baymax-1",
     "thread_id": "01a117be-2f8f-7ee0-b083-6e7a784569ef",
@@ -148,16 +164,16 @@
     "automation_id": "automation-2",
     "thread_id": "01a10a02-cc1c-7ff1-99fb-a261ec732cc9",
     "started_at": "2026-10-05T03:01:57Z",
-    "completed_at": "2026-10-05T03:03:28Z",
+    "completed_at": "2026-10-08T02:04:29Z",
     "outcome": "failed",
     "confidence": "explicit",
-    "basis": "本次阻断于仓库预检，未发送周报，正式产物零写入。\n周区间：2026-09-28 至 10-04（W40）；未分配版本。",
-    "summary": "本次阻断于仓库预检，未发送周报，正式产物零写入。\n\n- 周区间：2026-09-28 至 10-04（W40）；未分配版本。\n- 原因：git fetch origin 无法写入 .git/FETCH_HEAD，报 Operation not permitted；当前环境禁止提权。\n- 分页/消息、文档读取、事件/周报：均为 0；未解析项未评估。\n- message_id、发送回读、版本包、event/manifest 摘要：均未生成。…",
-    "detail": "本次阻断于仓库预检，未发送周报，正式产物零写入。\n\n- 周区间：2026-09-28 至 10-04（W40）；未分配版本。\n- 原因：git fetch origin 无法写入 .git/FETCH_HEAD，报 Operation not permitted；当前环境禁止提权。\n- 分页/消息、文档读取、事件/周报：均为 0；未解析项未评估。\n- message_id、发送回读、版本包、event/manifest 摘要：均未生成。\n- 仓库干净，HEAD 为 13d44368a623d4a04d5dec51b6d576d08e340c8a；无新提交、未 push，最新远端一致性未验证。\n\n已保存失败回执并更新自动化运行记录。需在允许写入 coop_info 的环境中重新执行完整流程。",
-    "error": "本次阻断于仓库预检，未发送周报，正式产物零写入。\n已保存失败回执并更新自动化运行记录。需在允许写入 coop_info 的环境中重新执行完整流程。",
+    "basis": "已修复自动化的项目绑定，并成功重跑之前失败的 W40 v1（9月28日—10月4日）。\n采集：1页、45/45条外层消息；465条证据，线程回复0条。",
+    "summary": "已修复自动化的项目绑定，并成功重跑之前失败的 W40 v1（9月28日—10月4日）。\n\n- 采集：1页、45/45条外层消息；465条证据，线程回复0条。\n- 资源：读取4篇云文档、1张在线工作表、21个附件；84项媒体未解析、1张表格按授权跳过，均已披露。\n- 简报：136个归档事件，归并为21个主题，正文3,185字。\n- 发送：已发送至技术中心核心沟通群。message_id：[标识已隐藏]。身份、目标、未删除状态及正文 SHA…",
+    "detail": "已修复自动化的项目绑定，并成功重跑之前失败的 W40 v1（9月28日—10月4日）。\n\n- 采集：1页、45/45条外层消息；465条证据，线程回复0条。\n- 资源：读取4篇云文档、1张在线工作表、21个附件；84项媒体未解析、1张表格按授权跳过，均已披露。\n- 简报：136个归档事件，归并为21个主题，正文3,185字。\n- 发送：已发送至技术中心核心沟通群。message_id：[标识已隐藏]。身份、目标、未删除状态及正文 SHA-256 回读全部通过。\n- 归档：版本包位于 [长标识已隐藏]；event 摘要 c571d545…3324，manifest 摘要 d4dc838b…1077。\n- Git：提交 de2a7eb2bb7572e519d13d29851d9ee581de55cf 已推送；再次 fetch 后 HEAD=upstream，ahead/behind=0 0，工作区干净。\n\n查看周报 · 完整发布回执\n\n自动化已绑定到 knowledge_base 本机项目；下一次无人值守运行的权限仍需由实际运行验证。",
+    "error": "已修复自动化的项目绑定，并成功重跑之前失败的 W40 v1（9月28日—10月4日）。",
     "source": "run_index",
-    "turn_count": 1,
-    "duration_seconds": 91
+    "turn_count": 3,
+    "duration_seconds": 255752
   },
   {
     "id": "1109872f8dbec8a3b129",
