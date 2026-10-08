@@ -1,5 +1,37 @@
 [
   {
+    "id": "2af0194ba6e3d521588e",
+    "automation_id": "baymax-1",
+    "thread_id": "01a11ce4-a27a-7183-abb4-879d65cacd13",
+    "started_at": "2026-10-08T19:01:48Z",
+    "completed_at": "2026-10-08T19:06:38Z",
+    "outcome": "success",
+    "confidence": "inferred",
+    "basis": "结果同时报告已推送和远端一致性验收；按规则推断。",
+    "summary": "2026-10-09 Baymax 项目 1 每日快照已成功发布。按仓库 $baymax-daily-snapshot skill 采集并验证了创建时间窗口内的 580 条事项，580 条均成功展开，失败 0。4 个 workers 完成一轮采集，无需降级重试。\n\n回执与索引已通过最终校验；提交 d1c8141 已推送至 origin/master。推送后重新 fetch 确认本地、远端和 upstream 一致，ahead/behin…",
+    "detail": "2026-10-09 Baymax 项目 1 每日快照已成功发布。按仓库 $baymax-daily-snapshot skill 采集并验证了创建时间窗口内的 580 条事项，580 条均成功展开，失败 0。4 个 workers 完成一轮采集，无需降级重试。\n\n回执与索引已通过最终校验；提交 d1c8141 已推送至 origin/master。推送后重新 fetch 确认本地、远端和 upstream 一致，ahead/behind 为 0 0，工作树干净。无需后续操作。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 290
+  },
+  {
+    "id": "a8d310d40db5c3efad78",
+    "automation_id": "automation",
+    "thread_id": "01a0cf35-f402-7983-ac61-c2790159ea40",
+    "started_at": "2026-10-08T17:01:48Z",
+    "completed_at": "2026-10-08T17:03:02Z",
+    "outcome": "partial",
+    "confidence": "inferred",
+    "basis": "结果报告存在无效或丢失消息，按部分成功处理。",
+    "summary": "<heartbeat>\n  <automation_id>automation</automation_id>\n  <decision>NOTIFY</decision>\n  <message>2026-10-08 群聊归档部分成功：扫描17群、读取90条，9个合并包及[接收人]简报已回读；12条消息无效，另有1群消息全部撤回，无法转发。</message>\n</heartbeat>",
+    "detail": "<heartbeat>\n  <automation_id>automation</automation_id>\n  <decision>NOTIFY</decision>\n  <message>2026-10-08 群聊归档部分成功：扫描17群、读取90条，9个合并包及[接收人]简报已回读；12条消息无效，另有1群消息全部撤回，无法转发。</message>\n</heartbeat>",
+    "error": "<message>2026-10-08 群聊归档部分成功：扫描17群、读取90条，9个合并包及[接收人]简报已回读；12条消息无效，另有1群消息全部撤回，无法转发。</message>",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 74
+  },
+  {
     "id": "f5d287bf09587b054eb6",
     "automation_id": "it-2",
     "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
