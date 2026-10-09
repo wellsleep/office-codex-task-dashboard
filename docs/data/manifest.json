@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-09T02:42:28Z",
+  "collected_at": "2026-10-09T06:12:48Z",
   "content_hash": "8c705ae1532036ccd90e83d024e0c2ab1e20cdcf6c5cf99f6c7f49fcbe811e66",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
@@ -8,7 +8,7 @@
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
   "run_count": 149,
-  "window_start": "2026-07-11T02:42:28Z",
+  "window_start": "2026-07-11T06:12:48Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
