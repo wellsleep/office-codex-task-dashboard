@@ -1,5 +1,37 @@
 [
   {
+    "id": "33b65c4efffcc8104c0b",
+    "automation_id": "automation-2",
+    "thread_id": "01a12e0e-f938-7db2-acc9-12b2548de0af",
+    "started_at": "2026-10-12T03:01:35Z",
+    "completed_at": "2026-10-12T03:15:10Z",
+    "outcome": "success",
+    "confidence": "explicit",
+    "basis": "已完成 2026-W41 v1（10月5日—11日，Asia/Shanghai） 的发送与归档。\n采集：1页，42/42条外层消息；回读一致，线程回复0条；去重后353条证据。",
+    "summary": "已完成 2026-W41 v1（10月5日—11日，Asia/Shanghai） 的发送与归档。\n\n- 采集：1页，42/42条外层消息；回读一致，线程回复0条；去重后353条证据。\n- 资源：读取6篇文档、1张工作表、253条定点记录及13份附件；63项未解析，其中1张CDG表按授权跳过并披露。\n- 产物：131个事件、1份2877字周报，零未解释遗漏。\n- 发送：[标识已隐藏]。目标、[接收人]身份、deleted=false及正文…",
+    "detail": "已完成 2026-W41 v1（10月5日—11日，Asia/Shanghai） 的发送与归档。\n\n- 采集：1页，42/42条外层消息；回读一致，线程回复0条；去重后353条证据。\n- 资源：读取6篇文档、1张工作表、253条定点记录及13份附件；63项未解析，其中1张CDG表按授权跳过并披露。\n- 产物：131个事件、1份2877字周报，零未解释遗漏。\n- 发送：[标识已隐藏]。目标、[接收人]身份、deleted=false及正文SHA-256一致性均通过回读。\n- 归档：W41 v1版本包。不可变event已生成，manifest推进至W41 v1；完整摘要见发布回执。\n- Git：c9fde85108cb9709f213599c8017c1afd139cbf2，push成功；再次fetch确认HEAD=upstream、差异0 0、工作区干净。\n\n本周重点关注税金回传缺口、清关/RFO规则落地及客户接收验收。",
+    "error": "",
+    "source": "run_index",
+    "turn_count": 1,
+    "duration_seconds": 815
+  },
+  {
+    "id": "bc38f315dd93a1423104",
+    "automation_id": "it-2",
+    "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
+    "started_at": "2026-10-11T20:01:34Z",
+    "completed_at": "2026-10-11T20:02:52Z",
+    "outcome": "unknown",
+    "confidence": "unknown",
+    "basis": "最终回复没有足够明确的整体结果，需人工确认。",
+    "summary": "最终回复没有足够明确的整体结果，需人工确认。",
+    "detail": "最终回复没有足够明确的整体结果，需人工确认。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 78
+  },
+  {
     "id": "b3e7e66d0c78d6a615b2",
     "automation_id": "baymax-1",
     "thread_id": "01a11ce4-a27a-7183-abb4-879d65cacd13",
