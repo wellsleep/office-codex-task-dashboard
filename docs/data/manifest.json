@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-12T08:20:20Z",
-  "content_hash": "dc34ae1ae1c3cfb1494fef9b43921533fc6c7f5c43d1356e1b96b5f847c7a518",
+  "collected_at": "2026-10-12T19:21:16Z",
+  "content_hash": "8862bbef747380608fb46cd02c5eb82741c96cf62cc5f57688fc4a289b46ca09",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
-  "run_count": 161,
-  "window_start": "2026-07-14T08:20:20Z",
+  "run_count": 163,
+  "window_start": "2026-07-14T19:21:16Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
@@ -20,12 +20,12 @@
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每周日、一、二、三、四、五、六 01:00",
-      "last_run_at": "2026-10-11T17:01:33Z",
-      "next_run_at": "2026-10-12T17:01:57Z",
-      "latest_run_id": "a1323624e471266499cc",
+      "last_run_at": "2026-10-12T17:02:08Z",
+      "next_run_at": "2026-10-13T17:00:44Z",
+      "latest_run_id": "2d9e0b4a3d93bfa04f8f",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 74
+      "run_count": 75
     },
     {
       "id": "automation-2",
@@ -46,12 +46,12 @@
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每周日、一、二、三、四、五、六 03:00",
-      "last_run_at": "2026-10-11T19:01:03Z",
-      "next_run_at": "2026-10-12T19:01:48Z",
-      "latest_run_id": "b3e7e66d0c78d6a615b2",
+      "last_run_at": "2026-10-12T19:02:08Z",
+      "next_run_at": "2026-10-13T19:00:30Z",
+      "latest_run_id": "64a52c474a4177b859a9",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 41
+      "run_count": 42
     },
     {
       "id": "codex",
@@ -108,11 +108,11 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-10-869b4ee04ea1.json",
-      "count": 43
+      "file": "runs-2026-10-1c2e854cf67e.json",
+      "count": 45
     },
     {
-      "file": "runs-2026-09-d35c578a64dc.json",
+      "file": "runs-2026-09-749ee17a1bcf.json",
       "count": 72
     },
     {
