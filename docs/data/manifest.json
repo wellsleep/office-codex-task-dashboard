@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-16T11:00:10Z",
-  "content_hash": "88258ecfa94e254b752034ef7b73fa17c56e1b7bbeb6742250fadc2e5fff8041",
+  "collected_at": "2026-10-16T20:00:56Z",
+  "content_hash": "94e391ed6a8b921815bf617dac57c6929fae458dba92c8671ea62950f051df6f",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
-  "run_count": 174,
-  "window_start": "2026-07-18T11:00:10Z",
+  "run_count": 177,
+  "window_start": "2026-07-18T20:00:56Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
@@ -20,12 +20,12 @@
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每周日、一、二、三、四、五、六 01:00",
-      "last_run_at": "2026-10-15T17:01:34Z",
-      "next_run_at": "2026-10-16T17:00:48Z",
-      "latest_run_id": "13026ef42864d30b7202",
+      "last_run_at": "2026-10-16T17:01:09Z",
+      "next_run_at": "2026-10-17T17:00:12Z",
+      "latest_run_id": "859cbc3fc89ef409a320",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 78
+      "run_count": 79
     },
     {
       "id": "automation-2",
@@ -46,12 +46,12 @@
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每周日、一、二、三、四、五、六 03:00",
-      "last_run_at": "2026-10-15T19:01:05Z",
-      "next_run_at": "2026-10-16T19:00:56Z",
-      "latest_run_id": "86e8b96a321515b24b2e",
+      "last_run_at": "2026-10-16T19:01:09Z",
+      "next_run_at": "2026-10-17T19:00:06Z",
+      "latest_run_id": "9c55e94e88b8e2022937",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 45
+      "run_count": 46
     },
     {
       "id": "codex",
@@ -85,12 +85,12 @@
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每天 04:00",
-      "last_run_at": "2026-10-15T20:00:35Z",
-      "next_run_at": "2026-10-16T20:00:17Z",
-      "latest_run_id": "2ee837a127a9af3e9574",
+      "last_run_at": "2026-10-16T20:00:40Z",
+      "next_run_at": "2026-10-17T20:01:23Z",
+      "latest_run_id": "3acbc55adc18c1b00cdc",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 23
+      "run_count": 24
     },
     {
       "id": "mcp-baymax-9-21",
@@ -108,11 +108,11 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-10-006d9001e5db.json",
-      "count": 56
+      "file": "runs-2026-10-37ba315c92f8.json",
+      "count": 59
     },
     {
-      "file": "runs-2026-09-8cbc5386ea8a.json",
+      "file": "runs-2026-09-e493c510536f.json",
       "count": 72
     },
     {
