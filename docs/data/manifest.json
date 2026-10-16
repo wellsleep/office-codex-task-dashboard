@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-16T20:00:56Z",
-  "content_hash": "94e391ed6a8b921815bf617dac57c6929fae458dba92c8671ea62950f051df6f",
+  "collected_at": "2026-10-16T21:01:04Z",
+  "content_hash": "694c4ae332b86713b9b4ff0cd6f1e1f022c8fba8f9350fd8052be02b81fedab0",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
-  "run_count": 177,
-  "window_start": "2026-07-18T20:00:56Z",
+  "run_count": 178,
+  "window_start": "2026-07-18T21:01:04Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
@@ -72,12 +72,12 @@
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每周三、六 05:00",
-      "last_run_at": "2026-10-13T21:01:14Z",
-      "next_run_at": "2026-10-16T21:00:04Z",
-      "latest_run_id": "238279541ab69a7639d7",
+      "last_run_at": "2026-10-16T21:00:10Z",
+      "next_run_at": "2026-10-20T21:00:45Z",
+      "latest_run_id": "6045bb00a9f88719e0a2",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 21
+      "run_count": 22
     },
     {
       "id": "it-2",
@@ -108,8 +108,8 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-10-37ba315c92f8.json",
-      "count": 59
+      "file": "runs-2026-10-4d4cc41fde32.json",
+      "count": 60
     },
     {
       "file": "runs-2026-09-e493c510536f.json",
