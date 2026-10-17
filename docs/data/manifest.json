@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-17T19:02:42Z",
-  "content_hash": "94cda80099ac24e1033273e0f24881f13cf82a921af1ed6f0295dbbecd6956a3",
+  "collected_at": "2026-10-17T20:02:51Z",
+  "content_hash": "6b6b943ef819cdbfa86d405fc047cb607589406a51c73aa0c91adcd40d23bc8a",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
-  "run_count": 180,
-  "window_start": "2026-07-19T19:02:42Z",
+  "run_count": 181,
+  "window_start": "2026-07-19T20:02:51Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
@@ -85,12 +85,12 @@
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每天 04:00",
-      "last_run_at": "2026-10-16T20:00:40Z",
-      "next_run_at": "2026-10-17T20:01:23Z",
-      "latest_run_id": "3acbc55adc18c1b00cdc",
+      "last_run_at": "2026-10-17T20:01:45Z",
+      "next_run_at": "2026-10-18T20:01:25Z",
+      "latest_run_id": "c22d78744e4b0370bed5",
       "coverage_gap": false,
       "possibly_overdue": false,
-      "run_count": 24
+      "run_count": 25
     },
     {
       "id": "mcp-baymax-9-21",
@@ -108,8 +108,8 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-10-8b565b9a6f76.json",
-      "count": 62
+      "file": "runs-2026-10-846efbab690a.json",
+      "count": 63
     },
     {
       "file": "runs-2026-09-6f7dd1f5631c.json",
