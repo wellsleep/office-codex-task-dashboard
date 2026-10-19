@@ -1,5 +1,21 @@
 [
   {
+    "id": "ceb50a680bd0d3c76831",
+    "automation_id": "automation-2",
+    "thread_id": "01a12e0e-f938-7db2-acc9-12b2548de0af",
+    "started_at": "2026-10-19T03:00:52Z",
+    "completed_at": "2026-10-19T03:18:56Z",
+    "outcome": "success",
+    "confidence": "explicit",
+    "basis": "已完成正式发送与归档。\n周区间／版本：2026-10-12 00:00 至 2026-10-19 00:00（不含），Asia/Shanghai，W42 v1。",
+    "summary": "已完成正式发送与归档。\n\n- 周区间／版本：2026-10-12 00:00 至 2026-10-19 00:00（不含），Asia/Shanghai，W42 v1。\n- 采集：2 页、68 条外层消息，对账及回读一致；归档 775 条消息证据，线程回复 0。\n- 资源：读取 6 份文档、8 个工作表、2 条需求记录、30 个附件。158 项未解析资源已披露，其中 2 张 Base 表和 1 个 XLS 按授权跳过。\n- 产出：184 …",
+    "detail": "已完成正式发送与归档。\n\n- 周区间／版本：2026-10-12 00:00 至 2026-10-19 00:00（不含），Asia/Shanghai，W42 v1。\n- 采集：2 页、68 条外层消息，对账及回读一致；归档 775 条消息证据，线程回复 0。\n- 资源：读取 6 份文档、8 个工作表、2 条需求记录、30 个附件。158 项未解析资源已披露，其中 2 张 Base 表和 1 个 XLS 按授权跳过。\n- 产出：184 个事件、1 份简报，3,271 字；零未解释遗漏。\n- 发送：[标识已隐藏]；回读确认[接收人]身份、目标群、deleted=false，正文 SHA-256 一致。\n- 归档：W42 v1 版本包。event 摘要 7f6d74c8…5817c13；manifest 摘要 5b7b4761…1461e10，已指向 W42 v1。\n- Git：3eba987eab8afd578542f22851f67b138e0d4bfe；push 成功，推送后 fetch 确认 HEAD＝upstream、ahead/behind＝0/0，工作区干净。",
+    "error": "",
+    "source": "heartbeat_marker",
+    "turn_count": 1,
+    "duration_seconds": 1084
+  },
+  {
     "id": "779988ca967d8b699601",
     "automation_id": "it-2",
     "thread_id": "01a0cced-a1c8-7be0-bd55-9675aa56196a",
@@ -388,16 +404,16 @@
     "automation_id": "automation-2",
     "thread_id": "01a12e0e-f938-7db2-acc9-12b2548de0af",
     "started_at": "2026-10-12T03:01:35Z",
-    "completed_at": "2026-10-12T03:15:10Z",
-    "outcome": "success",
-    "confidence": "explicit",
-    "basis": "已完成 2026-W41 v1（10月5日—11日，Asia/Shanghai） 的发送与归档。\n采集：1页，42/42条外层消息；回读一致，线程回复0条；去重后353条证据。",
-    "summary": "已完成 2026-W41 v1（10月5日—11日，Asia/Shanghai） 的发送与归档。\n\n- 采集：1页，42/42条外层消息；回读一致，线程回复0条；去重后353条证据。\n- 资源：读取6篇文档、1张工作表、253条定点记录及13份附件；63项未解析，其中1张CDG表按授权跳过并披露。\n- 产物：131个事件、1份2877字周报，零未解释遗漏。\n- 发送：[标识已隐藏]。目标、[接收人]身份、deleted=false及正文…",
-    "detail": "已完成 2026-W41 v1（10月5日—11日，Asia/Shanghai） 的发送与归档。\n\n- 采集：1页，42/42条外层消息；回读一致，线程回复0条；去重后353条证据。\n- 资源：读取6篇文档、1张工作表、253条定点记录及13份附件；63项未解析，其中1张CDG表按授权跳过并披露。\n- 产物：131个事件、1份2877字周报，零未解释遗漏。\n- 发送：[标识已隐藏]。目标、[接收人]身份、deleted=false及正文SHA-256一致性均通过回读。\n- 归档：W41 v1版本包。不可变event已生成，manifest推进至W41 v1；完整摘要见发布回执。\n- Git：c9fde85108cb9709f213599c8017c1afd139cbf2，push成功；再次fetch确认HEAD=upstream、差异0 0、工作区干净。\n\n本周重点关注税金回传缺口、清关/RFO规则落地及客户接收验收。",
+    "completed_at": null,
+    "outcome": "running",
+    "confidence": "unknown",
+    "basis": "已开始，尚未发现完成回执。",
+    "summary": "已开始，尚未发现完成回执。",
+    "detail": "已开始，尚未发现完成回执。",
     "error": "",
     "source": "run_index",
-    "turn_count": 1,
-    "duration_seconds": 815
+    "turn_count": 3,
+    "duration_seconds": null
   },
   {
     "id": "bc38f315dd93a1423104",
