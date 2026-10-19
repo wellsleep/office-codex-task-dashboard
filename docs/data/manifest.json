@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-19T04:05:24Z",
-  "content_hash": "c9cfd3e7e14d071182f0b849c886202a28cdda6fe81f3cfc984045380f9ad470",
+  "collected_at": "2026-10-19T06:05:37Z",
+  "content_hash": "9ab1c0ec4fbab892ab10d6402a351d1a338507334f12bd4f1acb24e3fb8da249",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
   "run_count": 186,
-  "window_start": "2026-07-21T04:05:24Z",
+  "window_start": "2026-07-21T06:05:37Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
@@ -42,7 +42,7 @@
     },
     {
       "id": "baymax-1",
-      "name": "baymax 需求管理每日快照",
+      "name": "Baymax、IT 工单与资源台账每日同步",
       "status": "ACTIVE",
       "kind": "heartbeat",
       "schedule": "每周日、一、二、三、四、五、六 03:00",
@@ -82,11 +82,11 @@
     {
       "id": "it-2",
       "name": "IT 资源台账日度检查",
-      "status": "ACTIVE",
+      "status": "PAUSED",
       "kind": "heartbeat",
       "schedule": "每天 04:00",
       "last_run_at": "2026-10-18T20:01:50Z",
-      "next_run_at": "2026-10-19T20:01:58Z",
+      "next_run_at": null,
       "latest_run_id": "779988ca967d8b699601",
       "coverage_gap": false,
       "possibly_overdue": false,
@@ -108,7 +108,7 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-10-86c2b2b9bad9.json",
+      "file": "runs-2026-10-946bdd880713.json",
       "count": 68
     },
     {
