@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-20T21:09:46Z",
-  "content_hash": "41a35a57ac9a309d63e74d5233b78240d52ae3bc0e9c9d0c5b7686af6975778a",
+  "collected_at": "2026-10-20T21:39:54Z",
+  "content_hash": "4049d3d83476c1c334b0d1bccf0842ac2da644a6c1b77975ee4f9311a0f93149",
   "timezone": "Asia/Shanghai",
   "retention_days": 90,
   "collection_interval_minutes": 30,
   "heartbeat_minutes": 120,
   "stale_after_minutes": 180,
   "run_count": 191,
-  "window_start": "2026-07-22T21:09:46Z",
+  "window_start": "2026-07-22T21:39:54Z",
   "coverage_start": "2026-07-31T17:02:05Z",
   "warnings": [
     "部分历史来源当前不可读取，保留上次结果并标注来源未复核。"
@@ -108,7 +108,7 @@
   ],
   "shards": [
     {
-      "file": "runs-2026-10-4aa451d5776b.json",
+      "file": "runs-2026-10-c9d4d374ffab.json",
       "count": 73
     },
     {
